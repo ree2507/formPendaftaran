@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Form Pendaftaran</h2>
+      <form action="#" method="post">
+        <label for="first-name">Nama Depan:</label>
+        <input type="text" id="first-name" name="first-name" required />
+
+        <label for="last-name">Nama Belakang:</label>
+        <input type="text" id="last-name" name="last-name" required />
+
+        <label for="location">Tempat Tinggal:</label>
+        <input type="text" id="location" name="location" required />
+
+        <label for="birth-date">Tanggal Lahir:</label>
+        <input type="date" id="birth-date" name="birth-date" required />
+
+        <label for="phone">Nomor HP:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          pattern="[0-9]{10,15}"
+          placeholder="Contoh: 081234567890"
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
